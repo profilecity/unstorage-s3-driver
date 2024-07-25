@@ -1,8 +1,8 @@
 {
-  "name": "@profilcity/unstorage-s3-driver",
+  "name": "@profilecity/unstorage-s3-driver",
   "version": "0.0.0",
   "description": "S3 Driver for Unstorage (by UnJS)",
-  "repository": "profilcity/unstorage-s3-driver",
+  "repository": "profilecity/unstorage-s3-driver",
   "author": "Aman Desai <amandesai01@gmail.com>",
   "license": "MIT",
   "sideEffects": false,
@@ -17,23 +17,19 @@
   "main": "./dist/index.cjs",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "scripts": {
     "build": "unbuild",
     "dev": "vitest dev",
-    "lint": "eslint . && biome check .",
-    "lint:fix": "automd && eslint . --fix && biome check --apply .",
+    "lint": "eslint .",
+    "lint:fix": "automd && eslint . --fix",
     "prepack": "yarn build",
-    "play": "jiti playground",
     "release": "yarn test && changelogen --release && npm publish && git push --follow-tags",
-    "test": "yarn lint && yarn test:types && vitest run --coverage",
-    "test:types": "tsc --noEmit --skipLibCheck"
+    "test": "yarn lint && yarn test:types && vitest run --coverage"
   },
   "devDependencies": {
-    "@biomejs/biome": "^1.7.2",
     "@types/node": "^20.12.7",
+    "@types/xml2js": "^0.4.14",
     "@vitest/coverage-v8": "^1.5.3",
     "automd": "^0.3.7",
     "changelogen": "^0.5.5",
@@ -46,5 +42,14 @@
   },
   "peerDependencies": {
     "unstorage": "^1.10.2"
+  },
+  "dependencies": {
+    "aws4fetch": "^1.0.19",
+    "jstoxml": "^3.2.10",
+    "ofetch": "^1.3.4",
+    "ufo": "^1.5.4",
+    "uncrypto": "^0.1.3",
+    "unstorage": "^1.10.2",
+    "xml2js": "^0.6.2"
   }
 }
