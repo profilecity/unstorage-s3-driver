@@ -1,9 +1,10 @@
-import { AwsClient } from "aws4fetch";
 /**
  * This code is taken from https://github.com/unjs/unstorage/pull/361
  * Credits: https://github.com/becem-gharbi
  */
-import { $fetch, FetchError } from "ofetch";
+
+import { AwsClient } from "aws4fetch";
+import { $fetch } from "ofetch";
 import { joinURL, withQuery } from "ufo";
 import crypto from "uncrypto";
 import { defineDriver } from "unstorage";
