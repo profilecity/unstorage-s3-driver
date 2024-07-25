@@ -1,6 +1,6 @@
 {
   "name": "@profilecity/unstorage-s3-driver",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "S3 Driver for Unstorage (by UnJS)",
   "repository": "profilecity/unstorage-s3-driver",
   "author": "Aman Desai <amandesai01@gmail.com>",
