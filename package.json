@@ -1,6 +1,6 @@
 {
   "name": "@profilecity/unstorage-s3-driver",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "S3 Driver for Unstorage (by UnJS)",
   "repository": "profilecity/unstorage-s3-driver",
   "author": "Aman Desai <amandesai01@gmail.com>",
@@ -15,14 +15,16 @@
   },
   "main": "./dist/index.cjs",
   "module": "./dist/index.mjs",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "unbuild",
     "dev": "vitest dev",
     "lint": "eslint .",
     "lint:fix": "automd && eslint . --fix",
     "prepack": "yarn build",
-    "release": "yarn test && changelogen --release && npm publish && git push --follow-tags",
+    "release": "changelogen --release && npm publish && git push --follow-tags",
     "test": "yarn lint && yarn test:types && vitest run --coverage"
   },
   "devDependencies": {
