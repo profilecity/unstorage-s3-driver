@@ -1,5 +1,7 @@
 # @profilecity/unstorage-s3-driver
 
+> The package hosts contents provided in PR: unjs/unstorage#361
+
 <!-- automd:badges color=yellow -->
 
 [![npm version](https://img.shields.io/npm/v/@profilecity/unstorage-s3-driver?color=yellow)](https://npmjs.com/package/@profilecity/unstorage-s3-driver)
@@ -7,7 +9,7 @@
 
 <!-- /automd -->
 
-This is my package description.
+HTTP Based S3 Driver for Unstorage (by UnJS).
 
 ## Usage
 
@@ -76,11 +78,11 @@ import {} from "https://esm.sh/pkg";
 
 <!-- automd:contributors license=MIT -->
 
-Published under the [MIT](https://github.com/unjs/@profilecity/unstorage-s3-driver/blob/main/LICENSE) license.
-Made by [community](https://github.com/unjs/@profilecity/unstorage-s3-driver/graphs/contributors) 💛
+Published under the [MIT](https://github.com/profilecity/unstorage-s3-driver/blob/main/LICENSE) license.
+Made by [community](https://github.com/profilecity/unstorage-s3-driver/graphs/contributors) 💛
 <br><br>
-<a href="https://github.com/unjs/@profilecity/unstorage-s3-driver/graphs/contributors">
-<img src="https://contrib.rocks/image?repo=unjs/@profilecity/unstorage-s3-driver" />
+<a href="https://github.com/profilecity/unstorage-s3-driver/graphs/contributors">
+<img src="https://contrib.rocks/image?repo=profilecity/unstorage-s3-driver" />
 </a>
 
 <!-- /automd -->
