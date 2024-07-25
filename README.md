@@ -36,30 +36,6 @@ bun install @profilecity/unstorage-s3-driver
 
 <!-- /automd -->
 
-Import:
-
-<!-- automd:jsimport cjs cdn name="pkg" -->
-
-**ESM** (Node.js, Bun)
-
-```js
-import {} from "pkg";
-```
-
-**CommonJS** (Legacy Node.js)
-
-```js
-const {} = require("pkg");
-```
-
-**CDN** (Deno, Bun and Browsers)
-
-```js
-import {} from "https://esm.sh/pkg";
-```
-
-<!-- /automd -->
-
 ## Development
 
 <details>
