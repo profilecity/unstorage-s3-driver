@@ -1,6 +1,27 @@
 # Changelog
 
 
+## v0.0.3
+
+[compare changes](https://github.com/profilecity/unstorage-s3-driver/compare/v0.0.1...v0.0.3)
+
+### 🩹 Fixes
+
+- **build:** Compile to Node16 to support type packages ([c638993](https://github.com/profilecity/unstorage-s3-driver/commit/c638993))
+
+### 📖 Documentation
+
+- Remove import instructions from readme ([13a9b6c](https://github.com/profilecity/unstorage-s3-driver/commit/13a9b6c))
+
+### 🏡 Chore
+
+- Remove type testing ([b1b6b4e](https://github.com/profilecity/unstorage-s3-driver/commit/b1b6b4e))
+- **release:** V0.0.2 ([0ae0f62](https://github.com/profilecity/unstorage-s3-driver/commit/0ae0f62))
+
+### ❤️ Contributors
+
+- Amandesai01 <amandesai01@gmail.com>
+
 ## v0.0.2
 
 [compare changes](https://github.com/profilecity/unstorage-s3-driver/compare/v0.0.1...v0.0.2)
