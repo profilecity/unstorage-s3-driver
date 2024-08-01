@@ -8,11 +8,10 @@ import { $fetch } from "ofetch";
 import { joinURL, withQuery } from "ufo";
 import crypto from "uncrypto";
 import { defineDriver } from "unstorage";
-import xml2js from "xml2js";
-import { createRequiredError } from "./utils";
+import { createRequiredError } from "./utils.js";
 
-// @ts-expect-error `File '/node_modules/jstoxml/dist/jstoxml.js' is not a module.  ts(2306)`
 import js2xml from "jstoxml";
+import xml2js from "xml2js";
 
 if (!globalThis.crypto) {
   // @ts-ignore
@@ -90,10 +89,10 @@ export const s3Driver = defineDriver((options: S3DriverOptions) => {
 
     return $fetch.raw(request).then((res) => {
       const metaHeaders: HeadersInit = {};
-      for (const [key, value] of res.headers.entries()) {
+      for (const key of Object.keys(res.headers)) {
         const match = /x-amz-meta-(.*)/.exec(key);
         if (match) {
-          metaHeaders[match[1]] = value;
+          metaHeaders[match[1]] = res.headers[key];
         }
       }
       return metaHeaders;
@@ -137,8 +136,8 @@ export const s3Driver = defineDriver((options: S3DriverOptions) => {
       .then((res) => {
         opts.headers ||= {};
 
-        for (const [key, value] of res.headers.entries()) {
-          opts.headers[key] = value;
+        for (const key of Object.keys(res.headers)) {
+          opts.headers[key] = res.headers[key];
         }
 
         return res._data;
